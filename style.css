@@ -29,6 +29,7 @@ body {
 }
 .buyTickets {
   margin-bottom: 60px;
+  margin-top: -40px;
   display: block;
   border: 5px solid #2a2a2a;
   width: 120px;
@@ -92,13 +93,13 @@ body {
 }
 
 .lineup15 {
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 52.5pt;
   line-height: 42pt;
 }
 
 .lineup2 {
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 39.4pt;
   line-height: 31pt;
 }
@@ -106,7 +107,7 @@ body {
 .lineup3 {
   font-size: 26pt;
   line-height: 24pt;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .sponsors {
@@ -126,4 +127,8 @@ body {
   max-width: 250px;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.holo {
+  text-align: right;
 }
