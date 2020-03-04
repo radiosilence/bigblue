@@ -83,7 +83,8 @@ body {
 }
 
 .lineup1 {
-  font-size: 72pt;
+  font-size: 72.9pt;
+  line-height: 56pt;
 }
 
 .lineup :nth-child(even) {
@@ -93,10 +94,12 @@ body {
 .lineup2 {
   text-align: justify;
   font-size: 40pt;
+  line-height: 32pt;
 }
 
 .lineup3 {
-  font-size: 24pt;
+  font-size: 26pt;
+  line-height: 24pt;
   text-align: justify;
 }
 
