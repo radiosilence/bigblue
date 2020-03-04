@@ -129,6 +129,10 @@ body {
   margin-right: 40px;
 }
 
+.ukf {
+  max-width: 100px;
+}
+
 .holo {
   text-align: right;
 }
