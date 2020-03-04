@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      BIG // BLUE // 2020
+    </title>
+    <script src="http://cdn.date-fns.org/VERSION/date_fns.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./grid.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script>
+      const padNo = n => (n < 10 ? `0${n}` : `${n}`);
+      const updateCountdown = () => {
+        const dest = new Date("2020-04-20T10:00").getTime() / 1000;
+        const diff = dest - new Date().getTime() / 1000;
+        const differenceInDays = Math.floor(diff / 86400);
+        const remainderDays = Math.floor(diff % 86400);
+        const differenceHours = Math.floor(remainderDays / 3600);
+        const remainderHours = diff % 3600;
+        const differenceMinutes = Math.floor(remainderHours / 60);
+        const remainderMinutes = remainderHours % 60;
+        const differenceSeconds = Math.floor(remainderMinutes);
+        document.getElementsByClassName("countdown")[0].innerHTML = `${padNo(
+          differenceInDays
+        )} : ${padNo(differenceHours)} : ${padNo(differenceMinutes)} : ${padNo(
+          differenceSeconds
+        )}`;
+      };
+      document.addEventListener("DOMContentLoaded", () => {
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <header class="pageHeader">
+      <div class="container">
+        <div class="col-12">
+          <div class="col-12 leaderContainer">
+            <span class="date">20//04//2020</span>
+            <span class="location">Turbo Island // Bristol (11+ ONLY)</span>
+          </div>
+          <img src="logo.png" class="logo" />
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="col-12 countdownContainer">
+        <span class="countdown">00 : 00 : 00 : 00</span>
+      </div>
+      <div class="col-12 tickets">
+        <a href="https://dice.com" class="buyTickets">
+          Buy tickets
+        </a>
+      </div>
+      <div class="col-12">
+        <section class="lineup1 lineup">
+          <span class="artist">WEYHEYHEY</span>
+          <span class="artist logo-blue">DAVID TONNER</span>
+          <span class="artist">C3B</span>
+        </section>
+        <section class="lineup lineup2">
+          <span class="artist">Biggie Smalls</span>
+          <span class="artist">Coldplay</span>
+          <span class="artist">SKRILLEX</span>
+          <span class="artist">TARP</span>
+          <span class="artist">Charli XCX</span>
+          <span class="artist">Hadean</span>
+          <span class="artist">DJ Can't Say No</span>
+          <span class="artist">Wallop</span>
+          <span class="artist">Gash</span>
+          <span class="artist">Armadillo Soundsystem</span>
+          <span class="artist">Mandidextrous</span>
+          <span class="artist">Kasabian</span>
+          <span class="artist">Ceephax Acid Crew</span>
+          <span class="artist">Black Sun Empire</span>
+          <span class="artist">Phatworld</span>
+          <span class="artist">Dave Skywalker</span>
+          <span class="artist">Ket (Lol)</span>
+          <span class="artist">Spiral Tribe</span>
+          <span class="artist">Chris Liberator</span>
+          <span class="artist">Spongebob Squarewave</span>
+          <span class="artist">Vandal Kaotik Soundsystem</span>
+          <span class="artist">DJ SWIPE RIGHT</span>
+          <span class="artist">Feeding Time</span>
+          <span class="artist">Vengaboys</span>
+          <span class="artist">Kai Haskins</span>
+          <span class="artist">Andy C</span>
+        </section>
+        <section class="lineup lineup3">
+          <span class="artist">Squarepusher</span>
+          <span class="artist">Vincent Van Sloth</span>
+          <span class="artist">Ry Botnik</span>
+          <span class="artist">Aviici</span>
+          <span class="artist">Blackout Crew</span>
+          <span class="artist">Aphex Twin</span>
+          <span class="artist">Cob Marley</span>
+          <span class="artist">Jimmy Saville (DJ Set)</span>
+          <span class="artist">Gypsy Unit</span>
+          <span class="artist">Bristol Donk Collective</span>
+          <span class="artist">DJ Swipe Right</span>
+          <span class="artist">Blink 182</span>
+        </section>
+      </div>
+      <div class="col-12 sponsors">
+        Sponsored By
+        <div class="sponsorWrapper">
+          <img src="dnbtalk.png" class="sponsor" />
+          <img src="ukf.png" class="sponsor" />
+          <img src="nhs.png" class="sponsor" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
