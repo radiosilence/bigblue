@@ -91,10 +91,16 @@ body {
   color: #ccc;
 }
 
+.lineup15 {
+  text-align: justify;
+  font-size: 52.5pt;
+  line-height: 42pt;
+}
+
 .lineup2 {
   text-align: justify;
-  font-size: 40pt;
-  line-height: 32pt;
+  font-size: 39.4pt;
+  line-height: 31pt;
 }
 
 .lineup3 {
