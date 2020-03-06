@@ -133,6 +133,10 @@ body {
   max-width: 100px;
 }
 
+.footer {
+  max-width: 100%;
+}
+
 .holo {
   text-align: right;
 }
